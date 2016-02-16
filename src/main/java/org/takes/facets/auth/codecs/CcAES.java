@@ -167,6 +167,8 @@ public final class CcAES implements Codec {
      * @param spec The algorithm parameter spec for cipher creation
      * @return The cipher
      * @throws IOException For any unexpected exceptions
+     * @todo: this String parameter "AES/CBC/PKCS5PADDING" shoud be defined
+     * as a Constant of Cipher with proper comment of usage
      */
     private Cipher create(final int mode, final AlgorithmParameterSpec spec)
         throws IOException {
